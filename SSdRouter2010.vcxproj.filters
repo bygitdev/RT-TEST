@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="BASE">
+      <UniqueIdentifier>{d180cca2-cf86-4dd4-9c01-2b8dd385bd1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HW">
+      <UniqueIdentifier>{2f37bb22-e31b-47a3-8e4c-5e44e2c69469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HW\AXL">
+      <UniqueIdentifier>{d7e5f7e4-1d32-4855-bd7e-a9012eba71ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SEQ">
+      <UniqueIdentifier>{a186f2c8-2444-4c29-97c4-44bfc3245284}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SEQ\Def">
+      <UniqueIdentifier>{de84e044-5030-4133-892f-b2aae5663d79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SEQ\Default">
+      <UniqueIdentifier>{e7fef718-c34a-4f3d-afb3-29b6421c61e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SEQ\Part">
+      <UniqueIdentifier>{5f3b505e-65ad-419b-8f84-dce7dc3c4eef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NEGRERTE">
+      <UniqueIdentifier>{536b4127-0b7c-4b46-a61f-b5e634221e57}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BASE\BaseAll.h">
+      <Filter>BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="BASE\Communication.h">
+      <Filter>BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="BASE\CSanSu.h">
+      <Filter>BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="BASE\CThread.h">
+      <Filter>BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="BASE\ECT.h">
+      <Filter>BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="BASE\Error.h">
+      <Filter>BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="BASE\FSM.h">
+      <Filter>BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="BASE\IniFile.h">
+      <Filter>BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="BASE\NvMem.h">
+      <Filter>BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="BASE\Pneumatic.h">
+      <Filter>BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="BASE\SeqTimer.h">
+      <Filter>BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="BASE\Tenkey.h">
+      <Filter>BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="HW\AjinLib.h">
+      <Filter>HW</Filter>
+    </ClInclude>
+    <ClInclude Include="HW\IOAXL.h">
+      <Filter>HW</Filter>
+    </ClInclude>
+    <ClInclude Include="HW\MtAXL.h">
+      <Filter>HW</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\SEQ.h">
+      <Filter>SEQ</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Def\AxisDef.h">
+      <Filter>SEQ\Def</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Def\ErrNameDef.h">
+      <Filter>SEQ\Def</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Def\Includes.h">
+      <Filter>SEQ\Def</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Def\IODef.h">
+      <Filter>SEQ\Def</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Def\PkgData.h">
+      <Filter>SEQ\Def</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Def\PneumaticDef.h">
+      <Filter>SEQ\Def</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Def\UserDataDef.h">
+      <Filter>SEQ\Def</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Default\AllHome.h">
+      <Filter>SEQ\Default</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Default\CheckError.h">
+      <Filter>SEQ\Default</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Default\CommWithMMI.h">
+      <Filter>SEQ\Default</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Default\LampBuzzer.h">
+      <Filter>SEQ\Default</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Default\OpButton.h">
+      <Filter>SEQ\Default</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Default\ReadWrite.h">
+      <Filter>SEQ\Default</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Default\SimpleFunc.h">
+      <Filter>SEQ\Default</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Default\TenkeyProc.h">
+      <Filter>SEQ\Default</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Part\_LdMz.h">
+      <Filter>SEQ\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="HW\AXL\AXA.h">
+      <Filter>HW\AXL</Filter>
+    </ClInclude>
+    <ClInclude Include="HW\AXL\AXC.h">
+      <Filter>HW\AXL</Filter>
+    </ClInclude>
+    <ClInclude Include="HW\AXL\AXD.h">
+      <Filter>HW\AXL</Filter>
+    </ClInclude>
+    <ClInclude Include="HW\AXL\AXDev.h">
+      <Filter>HW\AXL</Filter>
+    </ClInclude>
+    <ClInclude Include="HW\AXL\AXHD.h">
+      <Filter>HW\AXL</Filter>
+    </ClInclude>
+    <ClInclude Include="HW\AXL\AXHS.h">
+      <Filter>HW\AXL</Filter>
+    </ClInclude>
+    <ClInclude Include="HW\AXL\AXL.h">
+      <Filter>HW\AXL</Filter>
+    </ClInclude>
+    <ClInclude Include="HW\AXL\AXM.h">
+      <Filter>HW\AXL</Filter>
+    </ClInclude>
+    <ClInclude Include="BASE\MMF.h">
+      <Filter>BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Part\_LdMzInConv.h">
+      <Filter>SEQ\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Part\_LdMzOutConv.h">
+      <Filter>SEQ\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Part\_Rail.h">
+      <Filter>SEQ\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Part\_InPnp.h">
+      <Filter>SEQ\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Part\_Index.h">
+      <Filter>SEQ\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Part\_Router.h">
+      <Filter>SEQ\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Part\_OutPnp.h">
+      <Filter>SEQ\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Part\_Adc.h">
+      <Filter>SEQ\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Part\_Lotinfo.h">
+      <Filter>SEQ\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="SEQ\Part\_MgzLoadZ.h">
+      <Filter>SEQ\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="NEGRETE\_Data2Char.h">
+      <Filter>NEGRERTE</Filter>
+    </ClInclude>
+    <ClInclude Include="NEGRETE\Interface.h">
+      <Filter>NEGRERTE</Filter>
+    </ClInclude>
+    <ClInclude Include="NEGRETE\logdll.h">
+      <Filter>NEGRERTE</Filter>
+    </ClInclude>
+    <ClInclude Include="NEGRETE\need.h">
+      <Filter>NEGRERTE</Filter>
+    </ClInclude>
+    <ClInclude Include="NEGRETE\Piper_svr.h">
+      <Filter>NEGRERTE</Filter>
+    </ClInclude>
+    <ClInclude Include="NEGRETE\Que.h">
+      <Filter>NEGRERTE</Filter>
+    </ClInclude>
+    <ClInclude Include="NEGRETE\Thread.h">
+      <Filter>NEGRERTE</Filter>
+    </ClInclude>
+    <ClInclude Include="NEGRETE\TpBase.h">
+      <Filter>NEGRERTE</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BASE\Communication.cpp">
+      <Filter>BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="BASE\CSanSu.cpp">
+      <Filter>BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="BASE\CThread.cpp">
+      <Filter>BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="BASE\ECT.cpp">
+      <Filter>BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="BASE\Error.cpp">
+      <Filter>BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="BASE\FSM.cpp">
+      <Filter>BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="BASE\IniFile.cpp">
+      <Filter>BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="BASE\NvMem.cpp">
+      <Filter>BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="BASE\Pneumatic.cpp">
+      <Filter>BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="BASE\Tenkey.cpp">
+      <Filter>BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="HW\AjinLib.cpp">
+      <Filter>HW</Filter>
+    </ClCompile>
+    <ClCompile Include="HW\IOAXL.cpp">
+      <Filter>HW</Filter>
+    </ClCompile>
+    <ClCompile Include="HW\MtAXL.cpp">
+      <Filter>HW</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\main.cpp">
+      <Filter>SEQ</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\SEQ.cpp">
+      <Filter>SEQ</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\Default\AllHome.cpp">
+      <Filter>SEQ\Default</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\Default\CheckError.cpp">
+      <Filter>SEQ\Default</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\Default\CommWithMMI.cpp">
+      <Filter>SEQ\Default</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\Default\LampBuzzer.cpp">
+      <Filter>SEQ\Default</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\Default\OpButton.cpp">
+      <Filter>SEQ\Default</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\Default\ReadWrite.cpp">
+      <Filter>SEQ\Default</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\Default\SimpleFunc.cpp">
+      <Filter>SEQ\Default</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\Default\TenkeyProc.cpp">
+      <Filter>SEQ\Default</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\Part\_LdMz.cpp">
+      <Filter>SEQ\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="BASE\MMF.cpp">
+      <Filter>BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\Part\_LdMzInConv.cpp">
+      <Filter>SEQ\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\Part\_LdMzOutConv.cpp">
+      <Filter>SEQ\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\Part\_Rail.cpp">
+      <Filter>SEQ\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\Part\_InPnp.cpp">
+      <Filter>SEQ\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\Part\_Index.cpp">
+      <Filter>SEQ\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\Part\_Router.cpp">
+      <Filter>SEQ\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\Part\_OutPnp.cpp">
+      <Filter>SEQ\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\Part\_Adc.cpp">
+      <Filter>SEQ\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\Part\_LotInfo.cpp">
+      <Filter>SEQ\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="SEQ\Part\_MgzLoadZ.cpp">
+      <Filter>SEQ\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="NEGRETE\_Data2Char.cpp">
+      <Filter>NEGRERTE</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7F3CBE5D-72BB-44B3-B96E-03E728F73FE8}</ProjectGuid>
+    <RootNamespace>KFM4000S_PLUS</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <ProjectName>SSdRouter2010</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25420.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>C:\KOSES\SEQ</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>.\LIB;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BASE\BaseAll.h" />
+    <ClInclude Include="BASE\Communication.h" />
+    <ClInclude Include="BASE\CSanSu.h" />
+    <ClInclude Include="BASE\CThread.h" />
+    <ClInclude Include="BASE\ECT.h" />
+    <ClInclude Include="BASE\Error.h" />
+    <ClInclude Include="BASE\FSM.h" />
+    <ClInclude Include="BASE\IniFile.h" />
+    <ClInclude Include="BASE\MMF.h" />
+    <ClInclude Include="BASE\NvMem.h" />
+    <ClInclude Include="BASE\Pneumatic.h" />
+    <ClInclude Include="BASE\SeqTimer.h" />
+    <ClInclude Include="BASE\Tenkey.h" />
+    <ClInclude Include="HW\AjinLib.h" />
+    <ClInclude Include="HW\AXL\AXA.h" />
+    <ClInclude Include="HW\AXL\AXC.h" />
+    <ClInclude Include="HW\AXL\AXD.h" />
+    <ClInclude Include="HW\AXL\AXDev.h" />
+    <ClInclude Include="HW\AXL\AXHD.h" />
+    <ClInclude Include="HW\AXL\AXHS.h" />
+    <ClInclude Include="HW\AXL\AXL.h" />
+    <ClInclude Include="HW\AXL\AXM.h" />
+    <ClInclude Include="HW\IOAXL.h" />
+    <ClInclude Include="HW\MtAXL.h" />
+    <ClInclude Include="NEGRETE\Interface.h" />
+    <ClInclude Include="NEGRETE\logdll.h" />
+    <ClInclude Include="NEGRETE\need.h" />
+    <ClInclude Include="NEGRETE\Piper_svr.h" />
+    <ClInclude Include="NEGRETE\Que.h" />
+    <ClInclude Include="NEGRETE\Thread.h" />
+    <ClInclude Include="NEGRETE\TpBase.h" />
+    <ClInclude Include="NEGRETE\_Data2Char.h" />
+    <ClInclude Include="SEQ\Default\AllHome.h" />
+    <ClInclude Include="SEQ\Default\CheckError.h" />
+    <ClInclude Include="SEQ\Default\CommWithMMI.h" />
+    <ClInclude Include="SEQ\Default\LampBuzzer.h" />
+    <ClInclude Include="SEQ\Default\OpButton.h" />
+    <ClInclude Include="SEQ\Default\ReadWrite.h" />
+    <ClInclude Include="SEQ\Default\SimpleFunc.h" />
+    <ClInclude Include="SEQ\Default\TenkeyProc.h" />
+    <ClInclude Include="SEQ\Def\AxisDef.h" />
+    <ClInclude Include="SEQ\Def\ErrNameDef.h" />
+    <ClInclude Include="SEQ\Def\Includes.h" />
+    <ClInclude Include="SEQ\Def\IODef.h" />
+    <ClInclude Include="SEQ\Def\PkgData.h" />
+    <ClInclude Include="SEQ\Def\PneumaticDef.h" />
+    <ClInclude Include="SEQ\Def\UserDataDef.h" />
+    <ClInclude Include="SEQ\Part\_Adc.h" />
+    <ClInclude Include="SEQ\Part\_Index.h" />
+    <ClInclude Include="SEQ\Part\_InPnp.h" />
+    <ClInclude Include="SEQ\Part\_LdMzInConv.h" />
+    <ClInclude Include="SEQ\Part\_MgzLoadZ.h" />
+    <ClInclude Include="SEQ\Part\_OutPnp.h" />
+    <ClInclude Include="SEQ\Part\_Rail.h" />
+    <ClInclude Include="SEQ\Part\_LdMz.h" />
+    <ClInclude Include="SEQ\Part\_LdMzOutConv.h" />
+    <ClInclude Include="SEQ\Part\_Router.h" />
+    <ClInclude Include="SEQ\Part\_Lotinfo.h" />
+    <ClInclude Include="SEQ\SEQ.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BASE\Communication.cpp" />
+    <ClCompile Include="BASE\CSanSu.cpp" />
+    <ClCompile Include="BASE\CThread.cpp" />
+    <ClCompile Include="BASE\ECT.cpp" />
+    <ClCompile Include="BASE\Error.cpp" />
+    <ClCompile Include="BASE\FSM.cpp" />
+    <ClCompile Include="BASE\IniFile.cpp" />
+    <ClCompile Include="BASE\MMF.cpp" />
+    <ClCompile Include="BASE\NvMem.cpp" />
+    <ClCompile Include="BASE\Pneumatic.cpp" />
+    <ClCompile Include="BASE\Tenkey.cpp" />
+    <ClCompile Include="HW\AjinLib.cpp" />
+    <ClCompile Include="HW\IOAXL.cpp" />
+    <ClCompile Include="HW\MtAXL.cpp" />
+    <ClCompile Include="NEGRETE\_Data2Char.cpp" />
+    <ClCompile Include="SEQ\Default\AllHome.cpp" />
+    <ClCompile Include="SEQ\Default\CheckError.cpp" />
+    <ClCompile Include="SEQ\Default\CommWithMMI.cpp" />
+    <ClCompile Include="SEQ\Default\LampBuzzer.cpp" />
+    <ClCompile Include="SEQ\Default\OpButton.cpp" />
+    <ClCompile Include="SEQ\Default\ReadWrite.cpp" />
+    <ClCompile Include="SEQ\Default\SimpleFunc.cpp" />
+    <ClCompile Include="SEQ\Default\TenkeyProc.cpp" />
+    <ClCompile Include="SEQ\main.cpp" />
+    <ClCompile Include="SEQ\Part\_Adc.cpp" />
+    <ClCompile Include="SEQ\Part\_Index.cpp" />
+    <ClCompile Include="SEQ\Part\_InPnp.cpp" />
+    <ClCompile Include="SEQ\Part\_LdMzInConv.cpp" />
+    <ClCompile Include="SEQ\Part\_MgzLoadZ.cpp" />
+    <ClCompile Include="SEQ\Part\_OutPnp.cpp" />
+    <ClCompile Include="SEQ\Part\_Rail.cpp" />
+    <ClCompile Include="SEQ\Part\_LdMz.cpp" />
+    <ClCompile Include="SEQ\Part\_LdMzOutConv.cpp" />
+    <ClCompile Include="SEQ\Part\_Router.cpp" />
+    <ClCompile Include="SEQ\Part\_LotInfo.cpp" />
+    <ClCompile Include="SEQ\SEQ.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
